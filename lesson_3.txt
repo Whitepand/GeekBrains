@@ -57,12 +57,11 @@ class lesson_3 {
 
 
     static void guessTheWord() {
-        String[] words = readFromFile(new File("hw3text.txt"));
-         /*{"apple", "orange", "lemon", "banana", "apricot",
+        String[] words = {"apple", "orange", "lemon", "banana", "apricot",
             "avocado", "broccoli", "carrot", "cherry", "garlic",
             "grape", "melon", "leak", "kiwi", "mango",
             "mushroom", "nut", "olive", "pea", "peanut",
-            "pear", "pepper", "pineapple", "pumpkin", "potato"};*/
+            "pear", "pepper", "pineapple", "pumpkin", "potato"};
         String guess = null;
         String word = words[random.nextInt(words.length)];
         System.out.println(Arrays.toString(words));
