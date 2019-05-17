@@ -85,7 +85,7 @@ public class lesson_4_XO_Game {
             System.out.println("input coord X Y");
             x = sc.nextInt()-1;
             y = sc.nextInt()-1;
-        } while (!isCellValid(y,x));
+        } while (!isCellValid(x,y));
         map [y][x]= DOT_X;
         }
         public static boolean isCellValid (int x, int y){
