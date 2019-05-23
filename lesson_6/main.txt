@@ -1,0 +1,30 @@
+﻿public class Main {
+
+        public static void main(String[] args) {
+            int runCat = 201;
+            int swimCat = 1;
+            double jumpCat = 1.9;
+            int runDog = 500;
+            int swimDog = 10;
+            double jumpDog = 0.4;
+            System.out.println("Кот");
+            Anima.Cat cat = new Anima.Cat();
+            System.out.print("Кошка пытается пробежать "+ runCat+ " метров"+" ");
+            cat.run(runCat);
+
+            System.out.print("Кошка пытается проплыть "+ swimCat+ " метров"+" ");
+            cat.swim(swimCat);
+            System.out.print("Кошка пытается прыгнуть на "+ jumpCat+ " метров"+" ");
+            cat.jump(jumpCat);
+
+            System.out.println("Собака");
+            System.out.print("Собака пытается пробежать "+ runDog+ " метров"+" ");
+            Anima.Dog dog = new Anima.Dog();
+            dog.run(runDog);
+            System.out.print("Собака пытается проплыть "+ swimDog+ " метров"+" ");
+            dog.swim(swimDog);
+            System.out.print("Собака пытается прыгнуть на "+ jumpDog+ " метров"+" ");
+            dog.jump(jumpDog);
+        }
+    }
+
